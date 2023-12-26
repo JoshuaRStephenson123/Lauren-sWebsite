@@ -1,0 +1,35 @@
+    //Imports
+    @import 'utils/variables';
+    @import 'utils/mixins';
+    @import 'utils/functions';
+    @import 'utils/extensions';
+    
+    @import "base/base";
+    @import "base/typography";
+
+    @import "components/buttons";
+
+    @import "layouts/header";
+    @import "layouts/nav";
+    @import "layouts/container";
+    @import "layouts/form";
+
+    @import "pages/work";
+    @import "pages/about";
+    @import "pages/project";
+    @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;700&display=swap');
+
+    html{
+        font-family: $text-font-family;
+        color: $tertiary-color;
+        outline: none;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr 8fr;
+        padding-top: 10%;
+    }

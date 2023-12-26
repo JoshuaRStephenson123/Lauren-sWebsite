@@ -1,0 +1,20 @@
+header{
+    display: grid;
+    background-color: $primary-color;
+    border: 0;
+    outline: none;
+
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+    outline: none;
+    &__title{
+        display: flex;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 300%;
+    }
+}

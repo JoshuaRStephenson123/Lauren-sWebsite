@@ -1,0 +1,23 @@
+@import '../utils/variables';
+
+.header-nav{
+    display: flex;
+    justify-content: space-around;
+    &__item{
+        display: flex;
+        justify-content: center;
+        color: $secondary-color;
+        text-decoration: none;
+        border: 2px solid $tertiary-color;
+        font-weight: 700;
+        font-size: 30;
+        width: 10%;
+        border-radius: 20px;
+        transition: .3s ease;
+
+    };
+    &__item:hover{
+        transform: scale(1.7);
+        transition: .6s ease-in-out;
+    }
+};

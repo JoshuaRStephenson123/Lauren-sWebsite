@@ -1,0 +1,41 @@
+.filters{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.product{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    width: 90%;
+    justify-content: center;
+    
+
+    &__card{
+        display: flex;
+        width: auto;
+        height: 300px;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid $tertiary-color;
+        border-radius: 5%;
+        &__title{
+            position: relative;
+            left: -15%;
+            top: 40%;
+        }
+        &__btn{
+            cursor: pointer;
+            position: relative;
+            left: 40%;
+            width: 15%;
+            height: 100%;
+            font-size: x-large;
+            color: $secondary-color;
+            background-color: $primary-color;
+            border: 0px;
+        }
+    }
+}
