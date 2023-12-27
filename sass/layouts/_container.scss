@@ -5,12 +5,14 @@
 }
 
 .product{
-    display: grid;
+    display: inline-grid;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 2fr 2fr 2fr 2fr;
-    width: 90%;
-    justify-content: center;
-    
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+
+
 
     &__card{
         display: flex;
