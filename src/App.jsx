@@ -3,9 +3,7 @@ import ReactDOM from "react";
 import Header from "./header";
 import "../dist/css/stylesheet.css";
 import ProductCard from "./Product-Card";
-
-
-const arrOfObj = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+import Footer from "./Footer";
 
 function App () {
   return(
@@ -21,10 +19,10 @@ function App () {
       <ProductCard />
       <ProductCard />
       <ProductCard />
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
     </div>
+    <footer>
+      <Footer />
+    </footer>
     </>
   )
 }

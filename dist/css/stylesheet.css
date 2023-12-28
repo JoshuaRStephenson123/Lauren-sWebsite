@@ -1,27 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;700&display=swap");
-header {
-  display: grid;
-  background-color: #FFFFFF;
-  border: 0;
-  outline: none;
-}
-
 .header {
   display: flex;
   justify-content: center;
-  padding-top: 1%;
-  outline: none;
+  flex-direction: column;
+  align-items: center;
 }
 .header__title {
-  display: flex;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 300%;
+  order: 2;
+  margin-top: -120px;
+  font-size: 70px;
 }
 .header__logo {
+  order: 1;
   display: flex;
-  height: 100px;
-  width: 100px;
+  z-index: -1;
+  height: 350px;
+  width: 350px;
 }
 
 .header-nav {
@@ -31,17 +25,17 @@ header {
 .header-nav__item {
   display: flex;
   justify-content: center;
-  color: #F4C2C2;
+  color: #708090;
   text-decoration: none;
-  border: 2px solid #708090;
+  background: transparent;
+  border: 4px solid transparent;
   font-weight: 700;
-  font-size: 30;
-  width: 10%;
-  border-radius: 20px;
-  transition: 0.3s ease;
+  font-size: 40px;
+  transition: 0.6s ease;
 }
 .header-nav__item:hover {
-  transform: scale(1.7);
+  transform: scale(1.4);
+  color: #F4C2C2;
   transition: 0.6s ease-in-out;
 }
 
@@ -86,19 +80,52 @@ header {
   border: 0px;
 }
 
+.footer {
+  display: flex;
+  background: #708090;
+  color: #F4C2C2;
+  width: 100%;
+  height: 150px;
+  margin-top: 1%;
+}
+.footer__nav {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  font-size: 22px;
+  margin: 20px 10px 20px 40px;
+}
+.footer__nav__item {
+  width: 100%;
+}
+.footer__social-links {
+  width: 30%;
+  padding-left: 55%;
+  margin-bottom: 0;
+}
+.footer__social-links__list {
+  list-style-type: none;
+  display: flex;
+  gap: 50px;
+  flex-direction: row;
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
 html {
   font-family: "Dosis", sans-serif;
   color: #708090;
-  outline: none;
-}
-
-body {
   margin: 0;
   padding: 0;
 }
 
-main {
-  display: grid;
-  grid-template-columns: 1fr 8fr;
-  padding-top: 10%;
+body {
+  margin: 0 !important;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+footer {
+  padding: 0;
+  margin: 0;
 }/*# sourceMappingURL=stylesheet.css.map */

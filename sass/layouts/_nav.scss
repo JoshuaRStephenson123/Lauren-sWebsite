@@ -3,21 +3,22 @@
 .header-nav{
     display: flex;
     justify-content: space-around;
+
     &__item{
         display: flex;
         justify-content: center;
-        color: $secondary-color;
+        color: $tertiary-color;
         text-decoration: none;
-        border: 2px solid $tertiary-color;
+        background: transparent;
+        border: 4px solid transparent;
         font-weight: 700;
-        font-size: 30;
-        width: 10%;
-        border-radius: 20px;
-        transition: .3s ease;
+        font-size: 40px;
+        transition: .6s ease;
 
     };
     &__item:hover{
-        transform: scale(1.7);
+        transform: scale(1.4),;
+        color: $secondary-color;
         transition: .6s ease-in-out;
-    }
+    };
 };
